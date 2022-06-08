@@ -1,0 +1,1 @@
+ovpn_run "ls -alhd \$(realpath ${args[path]})/*"

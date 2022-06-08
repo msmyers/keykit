@@ -1,0 +1,11 @@
+export PATH="$PATH:/usr/local/lib/ruby/gems/2.7.0/bin"
+
+eval $(docker-machine env home)
+#eval "$(starship init zsh)"
+
+export SPACESHIP_USER_SHOW=false
+export SPACESHIP_HOST_SHOW=false
+export SPACESHIP_GIT_SHOW=false
+
+export SPACESHIP_DOCKER_SHOW=false
+

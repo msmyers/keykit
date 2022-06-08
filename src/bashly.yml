@@ -1,0 +1,105 @@
+name: cli
+help: Sample application
+version: 0.1.0
+
+environment_variables:
+
+#- name: OVPN_ID
+#  help: Set your API key (OVPN_ID)
+#  required: true
+
+commands:
+
+- name: exec_bin
+- name: exec_bind
+- name: keycart
+#- name: keyshelf
+#- name: keychain
+#- name: keystore
+
+- name: ovpn_run
+  args:
+    - name: command
+
+- name: build_ovpn
+  args:
+    - name: client
+
+- name: edit
+  args:
+    - name: command
+
+- name: env
+  args:
+    - name: ovpnid
+
+- name: provision
+  args: &provision_args
+    - name: cn
+      required: true
+  flags:
+    - long: --nopass
+
+- name: pki
+  commands:
+  - name: regen
+
+- name: volume
+  commands:
+    - name: destroy
+    - name: create
+    - name: ensure
+    - name: inspect
+    - name: export
+    - name: import
+
+- name: cat
+  args: &cat_args
+    - name: path
+      help: Path to file
+      required: false
+
+- name: ls
+  help: list files
+  args: &list_args
+    - name: path
+      help: Path to file
+      required: false
+
+- name: tar
+  help: tar files
+  args: &tar_args
+    - name: cn
+      required: true
+
+#- name: rm
+#  args: &rm_args
+#    - name: path
+#      help: Path to file
+#      required: false
+
+#- name: dir
+#  short: d
+#  help: Directory commands
+#  commands:
+#    - name: list
+#      help: Show files in the directory
+#
+#      args: &dir_args
+#        - name: path
+#          help: Directory path
+#          required: true
+#
+#- name: file
+#  short: f
+#  help: File commands
+#
+#  commands:
+#    - name: show
+#      help: Show file contents
+#      args: &file_args
+#        - name: path
+#          help: Path to file
+#          required: true
+#  examples:
+#  - cli tree

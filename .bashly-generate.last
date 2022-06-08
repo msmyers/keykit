@@ -1,0 +1,22 @@
+creating user files in src
+skipped src/initialize.sh (exists)
+skipped src/exec_bin_command.sh (exists)
+skipped src/exec_bind_command.sh (exists)
+skipped src/keycart_command.sh (exists)
+skipped src/ovpn_run_command.sh (exists)
+skipped src/build_ovpn_command.sh (exists)
+skipped src/edit_command.sh (exists)
+skipped src/env_command.sh (exists)
+skipped src/provision_command.sh (exists)
+skipped src/pki_regen_command.sh (exists)
+skipped src/volume_destroy_command.sh (exists)
+skipped src/volume_create_command.sh (exists)
+skipped src/volume_ensure_command.sh (exists)
+skipped src/volume_inspect_command.sh (exists)
+skipped src/volume_export_command.sh (exists)
+skipped src/volume_import_command.sh (exists)
+skipped src/cat_command.sh (exists)
+skipped src/ls_command.sh (exists)
+skipped src/tar_command.sh (exists)
+created ./cli
+run ./cli --help to test your bash script
